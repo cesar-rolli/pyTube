@@ -17,3 +17,5 @@ This process will be slow and use a lot of your computer.
 - Do a better GUI using Electron JS;
 - Use a Raspberry Pi 4 (in my case) to run scripts and not consume my PC;
 - Make an API to connect new GUI with RPI.
+
+![Captura de tela de 2021-12-17 17-37-51](https://user-images.githubusercontent.com/52143802/146606082-e348d38f-cf2b-4252-b670-fa9170d76e68.png)
