@@ -11,7 +11,7 @@ Was built entirely in Python.
 # How it works?
 YouTube don't allow to download videos in high resolutions with audio, so, my idea was download the video in 360p and use it as audio. 
 Then, the sript download the video at resolution you chose (1080p(HD), 1440p(HD), 2160p(4K) or 4320p(8K)) and combine the video and audio.
-This process will be slow and use a lot of your computer.
+This process will be slow and use a lot of your computer. (https://www.youtube.com/watch?v=vp2yiZnjK0w)
 
 # Next steps:
 - Do a better GUI using Electron JS;
