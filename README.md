@@ -2,6 +2,17 @@
 App to download YouTube videos in any resolution with GUI.
 
 
+# To install in Linux
+``` javascript
+# Clone the repository
+$ git clone https://github.com/SINCJunior/ArtemPro
+
+# Install dependencies
+$ apt-get install python3 python3-pip python3-tk
+$ pip install moviepy
+$ pip install pytube
+```
+
 # Frameworks
 This project use tkinter to make GUI,
 pytube to make an API and
