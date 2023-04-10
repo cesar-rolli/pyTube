@@ -54,7 +54,7 @@ This process will be slow and use a lot of your computer.
 
 # Next steps:
 - Download another resolution if the selected one is not available,
-- Download multiple videos,
+- Download multiple videos (multiprocess, maybe?),
 - Make a web page to download in other device (use my PC as server),
 - Make an API to send the final video.
 
