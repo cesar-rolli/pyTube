@@ -16,9 +16,9 @@ $ pip install pytube
 $ git clone https://git.videolan.org/git/ffmpeg/nv-codec-headers.git
 $ cd nv-codec-headers && sudo make install && cd -
 $ git clone https://git.ffmpeg.org/ffmpeg.git
-$ sudo apt-get install build-essential yasm cmake libtool libc6 libc6-dev unzip wget libnuma1 libnuma-dev
+$ sudo apt-get install build-essential yasm cmake libtool libc6 libc6-dev unzip wget libnuma1 libnuma-dev libmp3lame-dev
 $ cd ffmpeg/
-$ ./configure --enable-nonfree --enable-cuda-sdk --enable-libnpp --extra-cflags=-I/usr/local/cuda/include --extra-ldflags=-L/usr/local/cuda/lib64
+$ ./configure --enable-nonfree --enable-cuda-sdk --enable-libnpp --enable-libmp3lame --extra-cflags=-I/usr/local/cuda/include --extra-ldflags=-L/usr/local/cuda/lib64
 $ make -j 8
 $ sudo make install
 ```
@@ -29,10 +29,18 @@ pytube to make an API and
 moviepy to edit downloaded videos.
 Was built entirely in Python.
 
+## Notes
+We use Moviepy previously but its very slow, then we change to FFMPEG. 
+
+Results to process the video (https://www.youtube.com/watch?v=vp2yiZnjK0w) in:
+- Moviepy: 385 sec (6 min 25 sec)
+- FFMPEG: 
+
+
 # How it works?
 YouTube don't allow to download videos in high resolutions with audio, so, my idea was download the video in 360p and use it as audio. 
 Then, the sript download the video at resolution you chose (1080p(HD), 1440p(HD), 2160p(4K) or 4320p(8K)) and combine the video and audio.
-This process will be slow and use a lot of your computer. (https://www.youtube.com/watch?v=vp2yiZnjK0w)
+This process will be slow and use a lot of your computer. 
 
 # Next steps:
 - Do a better GUI using Electron JS;
