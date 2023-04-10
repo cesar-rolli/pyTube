@@ -53,8 +53,7 @@ This process will be slow and use a lot of your computer.
 ### Video that I used in tests: https://www.youtube.com/watch?v=vp2yiZnjK0w
 
 # Next steps:
-- Do a better GUI using Electron JS;
-- Use a Raspberry Pi 4 (in my case) to run scripts and not consume my PC;
-- Make an API to connect new GUI with RPI.
+- Make a web page to download in other device (use my PC as server),
+- Make an API to send the final video.
 
 ![Captura de tela de 2021-12-17 17-37-51](https://user-images.githubusercontent.com/52143802/146606082-e348d38f-cf2b-4252-b670-fa9170d76e68.png)
