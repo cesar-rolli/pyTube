@@ -40,7 +40,7 @@ Its around 24 times faster!
 
 My PC specs are:
 - Intel i7 10700K
-- 2xGB
+- 2x8GB
 - NVidia RTX 3070
 
 
