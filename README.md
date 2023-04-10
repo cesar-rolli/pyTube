@@ -35,8 +35,8 @@ I use Moviepy previously but its very slow, so I change to FFMPEG.
 Results to process the video (in 1080p and download time is not included) in:
 - Moviepy: 385 sec (6 min 25 sec)
 - FFMPEG: 16 sec
-Its around 24 times faster!
 
+Its around 24 times faster!
 
 My PC specs are:
 - Intel i7 10700K
