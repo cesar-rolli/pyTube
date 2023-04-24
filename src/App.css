@@ -1,0 +1,84 @@
+.App {
+  text-align: center;
+}
+
+.column {
+  background-color: #282c34;
+  min-height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-align: center;
+  justify-content: space-between;
+  height: 3vh;
+  width: 40vw;
+  margin-bottom: 4vh;
+}
+
+.input {
+  height: 3vh;
+  width: 30vw;
+  background-color: #282c34;
+  color: white;
+  font-size: 16px;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  outline: 0;
+}
+
+.button {
+  height: 5vh;
+  width: 10vw;
+  background-color: rgba(255, 0, 0, 0.253);
+  color: white;
+  font-size: calc(10px + 2vmin);
+  border-radius: 8px;
+  outline: 0;
+  border: 0;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #f00;
+}
+
+.radio {
+  display: flex; 
+  flex-direction: row;
+  align-items: center;
+  text-align: center;
+  height: 4vh;
+  cursor: pointer;
+}
+
+@media (max-width: 960px){
+  .row{
+    width: 90vw;
+  }
+  .input{
+    width: 65vw;
+  }
+  .dropdownMenu{
+    width: 27vw;
+  }
+  .button{
+    width: 27vw;
+  }
+}
+
+@media (max-width: 500px){
+  .input{
+    width: 60vw;
+  }
+}
