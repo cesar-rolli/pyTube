@@ -25,9 +25,21 @@
   margin-bottom: 4vh;
 }
 
-.input {
+.input_link {
   height: 3vh;
   width: 30vw;
+  background-color: #282c34;
+  color: white;
+  font-size: 16px;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  outline: 0;
+}
+
+.input_res {
+  height: 3vh;
+  width: 10vw;
   background-color: #282c34;
   color: white;
   font-size: 16px;

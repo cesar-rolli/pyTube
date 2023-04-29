@@ -4,29 +4,26 @@ import './App.css';
 
 function App() {
   const [initialData, setInitialData] = useState([{}]);
-  const [link, setLink] = useState([{}]);
   
-  // receber
+  // receive
   useEffect(() => {
     fetch('/api')
     .then(response => response.json())
     .then(data => setInitialData(data))
   }, []);
   
-  // enviar
-  const [inputs, setInputs] = useState([]);
+  // send
+  const [data, setData] = useState({link: '', resolution: ''});
   const handleChange = (event) => {
-    const name = event.target.name;
-    const value = event.target.value;
-    setInputs(values => ({...values, [name]: value}))
+    setData(values => ({...values, [event.target.name]: event.target.value}))
   }
   
-  const handleSubmit = (event) => {
-    event.preventDefault();
+  const handleSubmit = (e) => {
+    e.preventDefault();
 
-    axios.post('/submit', inputs)
-    .then(function(response){
-      console.log(response.data);
+    axios.post('/youtube', data)
+    .then(() => {
+      console.log(data.link, data.resolution);
     });
   };
 
@@ -39,16 +36,20 @@ function App() {
           <input 
             type="text" 
             name="link" 
-            className="input"
+            className="input_link"
+            value={data.link}
             onChange={handleChange}
             />
         </div>
         <div className="row">
-          <p>Resolution:</p>
-          <p className="radio"><input type="radio" value="720p" name="resolution" onChange={handleChange}/>720p (HD)</p>
-          <p className="radio"><input type="radio" value="1080p" name="resolution" onChange={handleChange}/>1080p (FHD)</p>
-          <p className="radio"><input type="radio" value="2160p" name="resolution" onChange={handleChange}/>2160p (4K)</p>
-          <p className="radio"><input type="radio" value="4320p" name="resolution" onChange={handleChange}/>4320p (8K)</p>
+          <p>Resolution (720p, 1080p, 2160p, 4320p):</p>
+          <input 
+            type="text" 
+            name="resolution"
+            className="input_res"
+            value={data.resolution}
+            onChange={handleChange}
+            />
         </div>
         <button name="submit" className="button">Download</button>
       </form>

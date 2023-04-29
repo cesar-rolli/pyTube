@@ -12,11 +12,11 @@ def api():
     'completed': False
   }
 
-@app.route('/submit', methods=["POST"])
+@app.route('/youtube', methods=["POST"])
 def create():
   request_link = request.json['link']
   request_resolution = request.json['resolution']
-  return request_resolution
+  return {request_link, request_resolution}
 
 
 
